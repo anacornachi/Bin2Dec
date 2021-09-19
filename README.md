@@ -4,7 +4,7 @@
 
 ## Descrição
 
-<p align="justify"> Esse projeto tem por objetivo melhorar e meus conhecimentos em JavaScript, para aplicar as técnicas que conheço no momento.<p>
+<p align="justify"> Esse projeto tem por objetivo melhorar meus conhecimentos em JavaScript, para aplicar as técnicas que conheço no momento e eventualmente descobrir novas.<p>
 
 ## :octocat: Desenvolvimento
 
