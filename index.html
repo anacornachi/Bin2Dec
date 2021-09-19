@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bin2Dec</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="
+      bg-gradient-to-r
+      from-yellow-400
+      via-indigo-300
+      to-pink-500
+      h-screen
+      overflow-hidden
+      text-indigo-900
+      flex
+      items-center
+      justify-center
+    "
+  >
+    <main class="w-4/5 h-4/5 relative">
+      <div
+        class="
+          absolute
+          w-full
+          h-full
+          opacity-30
+          bg-pink-50
+          rounded-full
+          shadow-xl
+          z-0
+        "
+      ></div>
+      <section
+        class="h-full w-full flex flex-col content items-center"
+        data-main-container
+      >
+        <div class="h-2/6 flex flex-col justify-center p-10">
+          <h1 class="text-pink-700 text-8xl font-normal font-bold h-full title">
+            Bin2Dec
+          </h1>
+          <h2 class="text-black text-lg h-full">
+            Conversor de número binário para número decimal
+          </h2>
+        </div>
+        <div class="h-2/6 w-full flex flex-col justify-center px-10 py-5">
+          <label for="binary" class="text-2xl font-semibold"
+            >Digite aqui o número binário</label
+          >
+          <p class="my-3">São aceitos somente números 0 e 1</p>
+          <div class="h-2/3 flex gap-5">
+            <input
+              placeholder="exemplo: 01011"
+              data-input
+              id="binary"
+              class="
+                shadow-none
+                outline-none
+                h-full
+                w-5/6
+                rounded-2xl
+                px-5
+                bg-indigo-700 bg-opacity-10
+                placeholder-blue-900
+                focus:ring-2 focus:ring-blue-800
+              "
+            />
+            <button
+              data-button
+              type="submit"
+              class="
+                font-bold
+                w-24
+                bg-pink-700
+                transition
+                duration-300
+                hover:bg-yellow-300 hover:text-blue-700
+                filter
+                hover:brightness-110
+                text-white
+                rounded-2xl
+                px-10
+                flex
+                items-center
+                justify-center
+              "
+            >
+              Converter
+            </button>
+          </div>
+        </div>
+        <section
+          data-display
+          class="h-2/6 w-full flex flex-col px-10 py-5 items-center"
+        ></section>
+      </section>
+    </main>
+    <script src="mains.js"></script>
+  </body>
+</html>

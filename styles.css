@@ -1,0 +1,27 @@
+.title {
+  animation-name: change-color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: rgb(182, 103, 255);
+  }
+  50% {
+    color: rgb(243, 37, 72);
+  }
+  75% {
+    color: rgb(32, 177, 13);
+  }
+  100% {
+    color: rgb(255, 255, 0);
+  }
+}
+
+.content * {
+  z-index: 10;
+}
