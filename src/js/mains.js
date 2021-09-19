@@ -15,9 +15,27 @@ class Converter {
   validateInput(event) {
     const { key } = event;
 
-    if (key !== "0" && key !== "1" && key !== "Backspace" && key !== "Enter") {
+    if (
+      key !== "0" &&
+      key !== "1" &&
+      key !== "Backspace" &&
+      key !== "Enter" &&
+      key !== "Control" &&
+      key !== "v" &&
+      key !== "c" &&
+      key !== "Shift" &&
+      key !== "Home" &&
+      key !== "End" &&
+      key !== "ArrowLeft" &&
+      key !== "ArrowRight" &&
+      key !== "ArrowUp" &&
+      key !== "ArrowDown"
+    ) {
       event.preventDefault();
       alert("Você deve somente inserir 0 ou 1");
+    }
+    if (key === "Enter") {
+      this.calculate(event);
     }
   }
 
@@ -41,9 +59,6 @@ class Converter {
     this.result = soma;
     console.log(this.result);
     this.render();
-  }
-  decToBinary(decimal) {
-    console.log(`${decimal} decimal`);
   }
 
   render() {
