@@ -92,7 +92,7 @@ class Converter {
         "
       >
         
-          <h6 class="font-semibold">Número binário:</h6><p>
+          <h6 class="font-semibold">Número decimal:</h6><p>
           ${this.result}
         </p>
       </div>
